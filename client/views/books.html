@@ -1,0 +1,11 @@
+<template name="books">
+  <input type="text" placeholder="Search..." value="{{booksSearchQuery}}">
+
+  {{#if searchResults.count}}
+    <ul>
+    {{#each searchResults}}
+      <li>{{name}}</li>
+    {{/each}}
+    </ul>
+  {{/if}}
+</template>
